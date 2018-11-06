@@ -5,14 +5,7 @@ import {
   SnippetString
 } from "vscode";
 import { ImportType } from "./auto-import";
-
-function commandBuilder(argument: ImportType) {
-  return {
-    title: "AutoImport",
-    command: "decorators.autoImport",
-    arguments: [argument]
-  };
-}
+import { commandBuilder } from "./utils";
 
 export class EmberDataAttrCompletionsProvider implements CompletionItem {
   label = "attr";

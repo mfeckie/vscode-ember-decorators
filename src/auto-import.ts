@@ -4,7 +4,12 @@ export enum ImportType {
   Service,
   EmberDataAttr,
   EmberDataHasMany,
-  EmberDataBelongsTo
+  EmberDataBelongsTo,
+  ComponentAttribute,
+  ComponentClassName,
+  ComponentClassNames,
+  ComponentLayout,
+  ComponentTagName,
 }
 
 export function autoImporter(type: ImportType) {
@@ -58,6 +63,26 @@ const edits: {
   [ImportType.EmberDataBelongsTo]: {
     importName: "belongsTo",
     importModule: "data"
+  },
+  [ImportType.ComponentTagName]: {
+    importName: "tagName",
+    importModule: "component"
+  },
+  [ImportType.ComponentAttribute]: {
+    importName: "attribute",
+    importModule: "component"
+  },
+  [ImportType.ComponentClassName]: {
+    importName: "className",
+    importModule: "component"
+  },
+  [ImportType.ComponentClassNames]: {
+    importName: "classNames",
+    importModule: "component"
+  },
+  [ImportType.ComponentLayout]: {
+    importName: "layout",
+    importModule: "component"
   }
 };
 
