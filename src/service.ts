@@ -5,7 +5,7 @@ import {
   MarkdownString
 } from "vscode";
 
-import { ImportType } from "../auto-import";
+import { ImportType } from "./auto-import";
 
 export class ServiceCompletionsProvider implements CompletionItem {
   label = "service";

@@ -1,6 +1,6 @@
 "use strict";
 import * as vscode from "vscode";
-import { ServiceCompletionsProvider } from "./services/service";
+import { ServiceCompletionsProvider } from "./service";
 import { autoImporter, ImportType } from "./auto-import";
 import {
   EmberDataAttrCompletionsProvider,
