@@ -2,6 +2,11 @@
 import * as vscode from "vscode";
 import { ServiceCompletionsProvider } from "./services/service";
 import { autoImporter, ImportType } from "./auto-import";
+import {
+  EmberDataAttrCompletionsProvider,
+  EmberDataBelongsToCompletionsProvider,
+  EmberDataHasManyCompletionsProvider
+} from "./ember-data";
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -21,7 +26,12 @@ export function activate(context: vscode.ExtensionContext) {
         position: vscode.Position,
         token: vscode.CancellationToken
       ) {
-        return [new ServiceCompletionsProvider()];
+        return [
+          new ServiceCompletionsProvider(),
+          new EmberDataAttrCompletionsProvider(),
+          new EmberDataHasManyCompletionsProvider(),
+          new EmberDataBelongsToCompletionsProvider()
+        ];
       }
     }
   );
