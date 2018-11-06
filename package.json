@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/mfeckie/vscode-ember-decorators.git"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Martin Feckie",
     "url": "https://mfeckie.github.io"
@@ -17,10 +17,9 @@
     "vscode": "^1.28.0"
   },
   "categories": [
-    "Other"
+    "Snippets"
   ],
   "activationEvents": [
-    "onLanguage:javascript",
     "onLanguage:typescript"
   ],
   "main": "./out/extension",
