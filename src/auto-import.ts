@@ -10,6 +10,14 @@ export enum ImportType {
   ComponentClassNames,
   ComponentLayout,
   ComponentTagName,
+  ObjectAction,
+  ObjectComputed,
+  ObjectObserves,
+  ObjectUnObserves,
+  ObjectOn,
+  ObjectOff,
+  ObjectReadOnly,
+  ObjectVolatile
 }
 
 export function autoImporter(type: ImportType) {
@@ -83,6 +91,34 @@ const edits: {
   [ImportType.ComponentLayout]: {
     importName: "layout",
     importModule: "component"
+  },
+  [ImportType.ObjectAction]: {
+    importName: "action",
+    importModule: "object"
+  },
+  [ImportType.ObjectComputed]: {
+    importName: "computed",
+    importModule: "object"
+  },
+  [ImportType.ObjectObserves]: {
+    importName: "observes",
+    importModule: "object"
+  },
+  [ImportType.ObjectUnObserves]: {
+    importName: "unobserves",
+    importModule: "object"
+  },
+  [ImportType.ObjectOn]: {
+    importName: "on",
+    importModule: "object"
+  },
+  [ImportType.ObjectOff]: {
+    importName: "off",
+    importModule: "object"
+  },
+  [ImportType.ObjectVolatile]: {
+    importName: "volatile",
+    importModule: "object"
   }
 };
 
