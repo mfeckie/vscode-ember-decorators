@@ -6,6 +6,38 @@ export enum ImportType {
   ComponentClassNames,
   ComponentLayout,
   ComponentTagName,
+  ComputedMacro,
+  ComputedAlias,
+  ComputedAnd,
+  ComputedBool,
+  ComputedCollect,
+  ComputedDeprecatingAlias,
+  ComputedEmpty,
+  ComputedEqual,
+  ComputedFilter,
+  ComputedFilterBy,
+  ComputedGt,
+  ComputedGte,
+  ComputedIntersect,
+  ComputedLt,
+  ComputedLte,
+  ComputedMap,
+  ComputedMapBy,
+  ComputedMatch,
+  ComputedMax,
+  ComputedMin,
+  ComputedNone,
+  ComputedNot,
+  ComputedNotEmpty,
+  ComputedOr,
+  ComputedOverridableReads,
+  ComputedReads,
+  ComputedSetDiff,
+  ComputedSort,
+  ComputedSum,
+  ComputedUnion,
+  ComputedUniq,
+  ComputedUniqBy,
   Controller,
   EmberDataAttr,
   EmberDataBelongsTo,
@@ -18,7 +50,7 @@ export enum ImportType {
   ObjectReadOnly,
   ObjectUnObserves,
   ObjectVolatile,
-  Service,
+  Service
 }
 
 export function autoImporter(type: ImportType) {
@@ -124,6 +156,134 @@ const edits: {
   [ImportType.Controller]: {
     importName: "controller",
     importModule: "controller"
+  },
+  [ImportType.ComputedMacro]: {
+    importName: "macro",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedAlias]: {
+    importName: "alias",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedAnd]: {
+    importName: "and",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedBool]: {
+    importName: "bool",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedCollect]: {
+    importName: "collect",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedDeprecatingAlias]: {
+    importName: "deprecatingAlias",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedEmpty]: {
+    importName: "empty",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedEqual]: {
+    importName: "equal",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedFilter]: {
+    importName: "filter",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedFilterBy]: {
+    importName: "filterBy",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedGt]: {
+    importName: "gt",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedGte]: {
+    importName: "gte",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedIntersect]: {
+    importName: "intersect",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedLt]: {
+    importName: "lt",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedLte]: {
+    importName: "lte",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedMap]: {
+    importName: "map",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedMapBy]: {
+    importName: "mapBy",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedMatch]: {
+    importName: "match",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedMax]: {
+    importName: "max",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedMin]: {
+    importName: "min",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedNone]: {
+    importName: "none",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedNot]: {
+    importName: "not",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedNotEmpty]: {
+    importName: "notEmpty",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedOr]: {
+    importName: "or",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedOverridableReads]: {
+    importName: "overridableReads",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedReads]: {
+    importName: "reads",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedSetDiff]: {
+    importName: "setDiff",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedSort]: {
+    importName: "sort",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedSum]: {
+    importName: "sum",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedUnion]: {
+    importName: "union",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedUniq]: {
+    importName: "uniq",
+    importModule: "object/computed"
+  },
+  [ImportType.ComputedUniqBy]: {
+    importName: "uniqBy",
+    importModule: "object/computed"
   }
 };
 

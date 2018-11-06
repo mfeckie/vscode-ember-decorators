@@ -10,6 +10,7 @@ import {
 import { componentCompletions } from "./component";
 import { objectCompletions } from "./object";
 import { controllerCompletions } from "./controller";
+import { computedCompletions } from "./computed";
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -36,7 +37,8 @@ export function activate(context: vscode.ExtensionContext) {
           new EmberDataBelongsToCompletionsProvider(),
           ...componentCompletions,
           ...objectCompletions,
-          ...controllerCompletions
+          ...controllerCompletions,
+          ...computedCompletions
         ];
       }
     }
