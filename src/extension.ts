@@ -21,7 +21,7 @@ export function activate(context: vscode.ExtensionContext) {
   );
 
   let completionsProvider = vscode.languages.registerCompletionItemProvider(
-    "typescript",
+    { scheme: "file", language: "typescript" },
     {
       provideCompletionItems(
         document: vscode.TextDocument,
