@@ -1,23 +1,24 @@
 import * as vscode from "vscode";
 
 export enum ImportType {
-  Service,
-  EmberDataAttr,
-  EmberDataHasMany,
-  EmberDataBelongsTo,
   ComponentAttribute,
   ComponentClassName,
   ComponentClassNames,
   ComponentLayout,
   ComponentTagName,
+  Controller,
+  EmberDataAttr,
+  EmberDataBelongsTo,
+  EmberDataHasMany,
   ObjectAction,
   ObjectComputed,
   ObjectObserves,
-  ObjectUnObserves,
-  ObjectOn,
   ObjectOff,
+  ObjectOn,
   ObjectReadOnly,
-  ObjectVolatile
+  ObjectUnObserves,
+  ObjectVolatile,
+  Service,
 }
 
 export function autoImporter(type: ImportType) {
@@ -119,6 +120,10 @@ const edits: {
   [ImportType.ObjectVolatile]: {
     importName: "volatile",
     importModule: "object"
+  },
+  [ImportType.Controller]: {
+    importName: "controller",
+    importModule: "controller"
   }
 };
 
