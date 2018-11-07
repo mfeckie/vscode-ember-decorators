@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/mfeckie/vscode-ember-decorators.git"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": {
     "name": "Martin Feckie",
     "url": "https://mfeckie.github.io"
