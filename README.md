@@ -35,12 +35,19 @@ Then run `Ember Decorators: Convert attr to @attr`, which will then do a best at
 export default class Foo extends Model.extend({
 
 }) {
-	attr() thing;
-	attr('string') foo;
-  attr('number') baz;
+  @attr() thing;
+  @attr('string') foo;
+  @attr('number') baz;
 }
 ```
 
 ## Known Issues
 
 Does not provide support for javascript currently, only TypeScript is supported.
+
+## Changelog
+
+0.0.1 - Initial release
+0.0.2 - Add support for all computeds
+0.0.3 - Add command to convert `attr` to decorated `@attr` in ember-data models
+0.0.4 - Indent with spaces
