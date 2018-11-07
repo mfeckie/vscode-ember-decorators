@@ -11,6 +11,8 @@ Take your object based attr's and convert them to decorated class attrs. Current
 
 consider the following
 
+![convert to decorats attrs](/images/attr-conversion.gif)
+
 ```ts
 export default class Foo extends Model.extend({
   thing: attr(),
