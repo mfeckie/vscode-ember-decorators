@@ -23,7 +23,15 @@
     "onLanguage:typescript"
   ],
   "main": "./out/extension",
-  "contributes": {},
+  "contributes": {
+    "commands": [
+      {
+        "command": "decorators.convertAttrs",
+        "title": "Convert attr to @attr",
+        "category": "Ember Decorators"
+      }
+    ]
+  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
