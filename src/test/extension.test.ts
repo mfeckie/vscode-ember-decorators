@@ -24,7 +24,7 @@ import { attr, hasMany } from '@ember-decorators/data';
 `;
 
 const noExistingDataImport = `
-import { service } from "@ember-decorators/service";
+import { inject as service } from "@ember-decorators/service";
 `;
 
 const withNewImport = `import { hasMany } from '@ember-decorators/data';
@@ -54,7 +54,7 @@ suite("Extension Tests", function() {
 
   test("with same import", function() {
     const finder = new Replacer({
-      importName: "service",
+      importName: "inject as service",
       importModule: "service"
     });
     const replacement = finder.updateImport(noExistingDataImport);

@@ -90,7 +90,7 @@ const edits: {
   [key: string]: ImportEdit;
 } = {
   [ImportType.Service]: {
-    importName: "service",
+    importName: "inject as service",
     importModule: "service"
   },
   [ImportType.EmberDataAttr]: {

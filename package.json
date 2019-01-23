@@ -7,14 +7,14 @@
     "type": "git",
     "url": "https://github.com/mfeckie/vscode-ember-decorators.git"
   },
-  "version": "0.0.4",
+  "version": "0.1.0",
   "author": {
     "name": "Martin Feckie",
     "url": "https://mfeckie.github.io"
   },
   "publisher": "mfeckies",
   "engines": {
-    "vscode": "^1.28.0"
+    "vscode": "^1.30.2"
   },
   "categories": [
     "Snippets"
@@ -40,10 +40,10 @@
     "test": "npm run compile && node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
-    "typescript": "^2.6.1",
+    "typescript": "3.2.4",
     "vscode": "^1.1.6",
     "tslint": "^5.8.0",
-    "@types/node": "^7.0.43",
-    "@types/mocha": "^2.2.42"
+    "@types/node": "10.12.18",
+    "@types/mocha": "5.2.5"
   }
 }
